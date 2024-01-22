@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2c5dd50638ba58549a1cf4c7b3660496
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - star1: {instanceID: 0}
+  - star2: {instanceID: 0}
+  - star3: {instanceID: 0}
+  - goodStar: {fileID: 21300048, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  - emptyStar: {fileID: 21300050, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

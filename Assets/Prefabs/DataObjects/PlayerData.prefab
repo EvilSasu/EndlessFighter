@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4235805094555622012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4519056289726932512}
+  - component: {fileID: 6579726093558552554}
+  - component: {fileID: 3151528417577962974}
+  m_Layer: 0
+  m_Name: PlayerData
+  m_TagString: PlayerData
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4519056289726932512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235805094555622012}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6579726093558552554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235805094555622012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d320f17bd23595f4c8f963759dc17dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  unitName: 
+  unitLevel: 0
+  maxHp: 0
+  maxHpWithPassives: 0
+  currentHp: 0
+  strength: 0
+  strengthWithPassives: 0
+  strengthWithPassivesAndBuffs: 0
+  agility: 0
+  agilityWithPassives: 0
+  agilityWithPassivesAndBuffs: 0
+  intelligence: 0
+  intelligenceWithPassives: 0
+  intelligenceWithPassivesAndBuffs: 0
+  defense: 0
+  defenseWithPassives: 0
+  defenseWithPassivesAndBuffs: 0
+  physicalDefense: 0
+  physicalDefenseWithPassives: 0
+  physicalDefenseWithPassivesAndBuffs: 0
+  magicDefense: 0
+  magicDefenseWithPassives: 0
+  magicDefenseWithPassivesAndBuffs: 0
+  rangeDefense: 0
+  rangeDefenseWithPassives: 0
+  rangeDefenseWithPassivesAndBuffs: 0
+  charisma: 0
+  gold: 0
+  maxExp: 0
+  currentExp: 0
+  diamonds: 0
+  freeAtributesPoints: 0
+  freeSkillPoints: 0
+  unlockedSkillInfoList: []
+  physicalDmg: 0
+  physicalDmgWithPassives: 0
+  physicalDmgWithPassivesAndBuffs: 0
+  rangeDmg: 0
+  rangeDmgWithPassives: 0
+  rangeDmgWithPassivesAndBuffs: 0
+  magicDmg: 0
+  magicDmgWithPassives: 0
+  magicDmgWithPassivesAndBuffs: 0
+  dodgeChance: 0
+  dodgeChanceWithPassives: 0
+  dodgeChanceWithPassivesAndBuffs: 0
+  critChance: 0
+  critChanceWithPassives: 0
+  critChanceWithPassivesAndBuffs: 0
+  critDmgMultiplication: 0
+  critDmgMultiplicationWithPassives: 0
+  critDmgMultiplicationWithPassivesAndBuffs: 0
+  bonusExp: 1
+  bonusGold: 1
+  energyRegenerationAmount: 1
+  bonusStrengthTrainingSpeedPercent: 0
+  bonusAgilityTrainingSpeedPercent: 0
+  bonusIntelligenceTrainingSpeedPercent: 0
+  bonusDefenseTrainingSpeedPercent: 0
+  bonusBuildingSpeedPercent: 0
+  cooldownAmount: 1
+  minDamage: 0
+  maxDamage: 0
+  itemsInInventory: []
+  itemsInEQ: []
+  itemsSprites:
+  - {fileID: 832929203, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: 267401310, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: 1332398466, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: 208699971, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: 1343809154, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: -1551509422, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: 250915817, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: -1115980705, guid: 2f324ec33ba036b4fb30786e82bdc5c6, type: 3}
+  - {fileID: 21300000, guid: b301452d9a3f10241aea6f2cef811767, type: 3}
+  - {fileID: 21300000, guid: 8718fb93d2c08094d820519ea2709ce0, type: 3}
+--- !u!114 &3151528417577962974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235805094555622012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9722bccf37e776d49b99d1063435af83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
