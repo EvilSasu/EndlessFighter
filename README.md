@@ -1,5 +1,3 @@
-# Endless Fighter
-
 ## Project Overview
 Endless Fighter is an action-packed 2D game built with Unity, featuring engaging combat mechanics, dynamic gameplay, and a rich RPG system. The game involves battling against enemies, managing health and energy, collecting various items, and unlocking achievements. Players can upgrade their skills, equip items, and progress through increasingly challenging levels. The game integrates combat animations, skill systems, dynamic item drops, and detailed player attributes to create an immersive experience.
 
