@@ -207,6 +207,54 @@ Endless Fighter is an action-packed 2D game built with Unity, featuring engaging
   - **SetupInventoryItems()**: Sets up the inventory items for display.
   - **SetupEQItems()**: Sets up the equipment items for display.
 
+### 29. **InventorySlot**
+- **Purpose**: Represents a slot in the inventory where items can be dropped.
+- **Key Features**:
+  - Manages the type of item that can be dropped in the slot (`itemEnums`, `itemType`).
+  - The `OnDrop` method checks if an item is being dropped into the slot and moves it if valid.
+  - The `CheckItemType` method ensures the correct type of item is dropped into the inventory slot.
+  - Handles drag-and-drop interactions with items, utilizing the `DraggableItem` component for handling the visual movement and placement of items.
+
+### 30. **InventoryStatsController**
+- **Purpose**: Manages the player's inventory stats and calculates bonus stats based on equipped items.
+- **Key Features**:
+  - Tracks and updates various bonuses (e.g., damage, defense, strength) based on items in the inventory.
+  - Provides methods to add, remove, and sum up bonus stats for the player.
+  - The `UpdateBonusStats` method is a placeholder for logic that could add or remove bonus stats from equipped items.
+  - The `SumUpBonusStats` method iterates through equipped items in inventory slots and applies their bonuses to the player’s stats.
+  - Handles different types of defenses and stats like strength, agility, and intelligence.
+
+### 31. **ItemPanel**
+- **Purpose**: Displays detailed information about an item in the UI.
+- **Key Features**:
+  - Uses the `TextMeshProUGUI` components to display item properties like name, rarity, damage, and bonuses.
+  - Has an animator to control the UI transitions (e.g., idle state after a timer expires).
+  - Changes the color of the upper border based on the item's rarity.
+  - Displays various bonuses that the item provides (e.g., strength, agility).
+  - Supports custom formatting for displaying stats in the UI with special colors and fonts.
+
+### 32. **Requirement**
+- **Purpose**: Represents a requirement needed to unlock or upgrade a skill.
+- **Key Features**:
+  - Specifies the requirement type (`RequirementType`), which could be an attribute or a skill.
+  - Tracks whether the requirement is unlocked (`isUnlocked`).
+  - Includes base level and required level for progression in the game.
+
+### 33. **SkillDescriptionPanelController**
+- **Purpose**: Manages the UI panel that displays information about a specific skill.
+- **Key Features**:
+  - Updates the panel with skill information such as name, level, type, description, requirements, and upgrade cost.
+  - Handles the display of skill requirements and checks if they are met.
+  - Controls the upgrade button's interactivity based on whether the player has enough skill points and meets all skill requirements.
+  - Provides methods for unlocking and upgrading skills, updating the UI accordingly.
+
+### 34. **SkillInfo**
+- **Purpose**: Represents the skill information for a specific skill, including its upgrade state and requirements.
+- **Key Features**:
+  - Stores information about a skill, including its name, level, type, and description.
+  - Manages the upgrade process by checking if the player can upgrade the skill.
+  - The skill’s level, requirements, and upgrade costs are displayed dynamically in the UI.
+
 ## Battle System Integration
 
 ### 1. **UnitBattle**
