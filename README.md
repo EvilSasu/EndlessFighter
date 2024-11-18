@@ -99,41 +99,113 @@ Endless Fighter is an action-packed 2D game built with Unity, featuring engaging
   - Updates the UI to show the remaining time of the skill.
   - Provides logic to start, update, and end a skill's effect.
 
-## 14. **ActiveSkillController**
+### 14. **ActiveSkillController**
 - **Purpose**: Manages the activation of active skills in the game’s UI.
 - **Key Features**:
   - Handles skill activation by looking up skills in the `activeSkillList` and triggering the appropriate skill action.
   - Displays the skill's UI element when activated.
   - Supports the use of multiple active skills by managing them dynamically.
 
-## 15. **MagicAttack**
+### 15. **MagicAttack**
 - **Purpose**: Manages magic projectiles in combat, such as Fireball or Lightning Strike.
 - **Key Features**:
   - Moves the magic projectile towards the target and rotates it as necessary.
   - Applies damage when the projectile reaches the target.
   - Identifies whether the projectile is cast by the player or an enemy and determines the target accordingly.
 
-## 16. **Skill**
+### 16. **Skill**
 - **Purpose**: Represents a skill within the game, including its name, description, cooldown, and level.
 - **Key Features**:
   - Defines the basic properties of a skill (name, description, cooldown, level).
   - Provides access to skill UI components like images and buttons.
   - Manages bonus effects that scale with the skill's level.
 
-## 17. **SkillManager**
+### 17. **SkillManager**
 - **Purpose**: Manages all player skills, handling UI setup, skill activation, and cooldown logic.
 - **Key Features**:
   - Initializes the skill UI based on available skills.
   - Manages skill cooldowns and disables buttons during cooldown periods.
   - Handles the triggering of skill effects during combat and ensures they are applied correctly.
 
-## 18. **LevelPanelController**
+### 18. **LevelPanelController**
 - **Purpose**: Controls the level selection UI and the flow of starting a new level.
 - **Key Features**:
   - Displays information about the level, such as the number of enemies and their level.
   - Handles the player’s energy and starts the level when sufficient energy is available.
   - Updates UI elements like stars to reflect the player’s performance on the level.
   - Manages the transition between levels by removing old UI elements.
+    
+### 19. **AchievementManager**
+- **Purpose**: Manages the player's achievements, tracks progress, and handles data persistence for achievements.
+- **Key Features**:
+  - Tracks player stats such as level, strength, agility, intelligence, defense, etc.
+  - Monitors progress toward achievement goals and unlocks achievements.
+  - Saves and loads achievement data using `PlayerPrefs`.
+  - Updates achievement progress based on player actions and conditions.
+  - Provides functionality for checking unlocked achievements and updating the achievement status.
+
+### 20. **AchievementPanel**
+- **Purpose**: Handles the visual representation of achievements in the UI, including progress tracking, animations, and rewards.
+- **Key Features**:
+  - Displays achievement progress and updates in real-time.
+  - Triggers animations when an achievement is unlocked.
+  - Provides rewards (such as experience, coins, or diamonds) when an achievement is completed.
+  - Updates achievement descriptions and progress based on player performance.
+  - Animates the destruction and removal of the achievement panel once completed.
+
+### 21. **AchievementUI**
+- **Purpose**: Manages the dynamic display of achievement panels in the game's UI, visualizing progress and rewards.
+- **Key Features**:
+  - Instantiates and manages panels dynamically for each achievement.
+  - Updates progress bars in real-time based on player data.
+  - Displays appropriate rewards like experience, coins, or diamonds.
+  - Handles the creation of new achievement panels when new achievements are unlocked.
+  - Sets up UI components for each achievement panel, including titles, descriptions, and buttons.
+
+### 22. **FightAchievementUpdate**
+- **Purpose**: This class is responsible for updating the achievement data, including gold and diamonds earned, and tracking the number of enemies defeated by the player.
+- **Key Features**:
+  - **UpdateAchievementData(int gold, int diamonds)**: Increases the gold and diamonds earned by the player based on the inputs.
+  - **UpdateEnemiesDefeated()**: Increases the count of defeated enemies in the player's achievement data.
+
+### 23. **MapAchievementLevelController**
+- **Purpose**: Manages the tracking of the player's progress through levels and updates achievement data accordingly.
+- **Key Features**:
+  - **SetLastPlayedLevel(int level)**: Updates the last played level if the new level is higher than the previous one.
+  - **SetLastLevelToAchievements(float time)**: Waits for a short duration and then updates the last played level in the achievement system.
+
+### 24. **AttributesPanelController**
+- **Purpose**: Manages the display and functionality of the player's attributes panel, where the player can assign attribute points.
+- **Key Features**:
+  - **SetupFreeAttributesPoints()**: Displays the number of free attribute points available.
+  - **SetupAttributes()**: Displays the current values of the player's attributes.
+  - Methods for adding attribute points to Strength, Agility, Intelligence, and Defense.
+
+### 25. **ExclamationMarkController**
+- **Purpose**: Manages the display of exclamation marks in the player's panel to notify them of available actions (e.g., free points or unlocked achievements).
+- **Key Features**:
+  - **CheckData()**: Checks if there are free attribute or skill points, or if any achievements are unlocked, and sets the visibility of exclamation marks accordingly.
+
+### 26. **DraggableItem**
+- **Purpose**: Allows items to be dragged and dropped within the inventory or equipment system.
+- **Key Features**:
+  - Implements drag-and-drop functionality (`IBeginDragHandler`, `IDragHandler`, `IEndDragHandler`).
+  - Displays item info in a panel while dragging.
+  - Updates the player's inventory and equipment when the drag operation ends.
+
+### 27. **InventoryBonusStats**
+- **Purpose**: Tracks and applies bonus stats from items in the player's inventory and equipment.
+- **Key Features**:
+  - **UpdateStats(InventoryStatsController inventoryStatsController)**: Updates bonus stats based on the equipment items.
+  - **UpdateValuesAfterLoad(List<ItemDataSS> itemsInEQ)**: Updates bonus stats based on items in the equipment.
+  - Methods for resetting and applying bonus stats to the player’s attributes.
+
+### 28. **InventorySetup**
+- **Purpose**: Manages the setup and display of inventory or equipment slots, as well as handling the items within them.
+- **Key Features**:
+  - **GetAllItemSlotsInInventory()**: Retrieves all inventory slots in the current inventory setup.
+  - **SetupInventoryItems()**: Sets up the inventory items for display.
+  - **SetupEQItems()**: Sets up the equipment items for display.
 
 ## Battle System Integration
 
